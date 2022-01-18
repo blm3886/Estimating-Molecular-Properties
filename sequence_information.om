@@ -1,0 +1,53 @@
+package sequence_information:
+
+sub GC_Content{
+         my(@fasta) = @_;
+         $length = scalar(@fasta);
+         print "$length \n";
+         $count_A = 0;
+         $count_T = 0;
+         $count_G = 0;
+         $count_C = 0; 
+         $count_U = 0; 
+         
+         foreach $a (@fasta){
+                  ## counting A ##
+                  if($s eq "A"){
+                  $count_A++;
+                  }
+
+                  ## counting T ##
+                  if($s eq "T"){
+                  $count_T++;
+                  }
+
+                  ## counting G ##
+                  if($s eq "G"){
+                  $count_G++;
+                  }
+
+                  ## counting C ##
+                  if($s eq "C"){
+                  $count_C++;
+                  }
+
+                  ## counting U ##
+                  if($s eq "U"){
+                  $count_U++;
+                  }
+
+                  }
+
+     print "\n\n:: NUCLEOTIDE INFORMATION:: \n";
+     print "Total A nucleotides : $ count_A  \n";
+     print "Total T nucleotides : $ count_A  \n";
+     print "Total G nucleotides : $ count_A  \n";
+     print "Total C nucleotides : $ count_A  \n";
+     print "Total U nucleotides : $ count_A  \n";
+
+     $sum = $count_G +  $count_C;
+
+     $GC_Cont = ($sum/$length)*100;
+      return ($GC_Cont);
+}
+1;
