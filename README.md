@@ -1,6 +1,6 @@
 # Estimating-Molecular-Properties
 
-## Developed scripts in Perl to eastimate the following properties.
+## Developed scripts in Perl to estimate the following properties.
 - Percentage of Hydrophic amino acids in a peptide sequence.
 - Percentage of Hydrophillic  amino acids in a peptide sequence.
 - Molecular weight of the peptide seqence.
